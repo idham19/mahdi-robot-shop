@@ -76,3 +76,6 @@
 .button{
   cursor: pointer;
 }
+.discount{
+  color: palevioletred;
+}
