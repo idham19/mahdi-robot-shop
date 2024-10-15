@@ -8,6 +8,7 @@ import { IProduct } from './product.model';
 })
 export class CatologComponent {
  product:IProduct;
+
  constructor(){
   this.product={
     id:2,
@@ -18,5 +19,8 @@ export class CatologComponent {
     price:945.0,
     discount:0.2
   }
+ }
+ getImageUrl(product:IProduct) {
+   return '/assets/images/robot-parts/'+ product.imageName
  }
 }
