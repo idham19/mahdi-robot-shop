@@ -189,13 +189,6 @@ export class CatologComponent {
   ];
  }
 
- getImageUrl(product:IProduct) {
-   return '/assets/images/robot-parts/'+ product.imageName
- }
-
- getDiscount(product:IProduct){
-  return {'strikeThrought':product.discount>0}
- }
  getFiltredProducts(){
   return this.filter===''
   ? this.products
