@@ -9,6 +9,7 @@ import { IProduct } from './product.model';
 export class CatologComponent {
  products:IProduct[];
  filter:string='';
+ cart:IProduct[]=[]
 
  constructor(){
   this.products= [
@@ -199,5 +200,10 @@ export class CatologComponent {
   return this.filter===''
   ? this.products
   :this.products.filter((product)=>product.category===this.filter)
+ }
+ addToCart(product:IProduct){
+ this.cart.push(product)
+ console.log(`product ${product.name} added to cart`);
+ 
  }
 }

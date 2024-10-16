@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CatologComponent } from './catolog/catolog.component';
 import { SiteHeaderComponent } from './site-header/site-header.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { SiteHeaderComponent } from './site-header/site-header.component';
     HomeComponent,
     CatologComponent,
     SiteHeaderComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule
